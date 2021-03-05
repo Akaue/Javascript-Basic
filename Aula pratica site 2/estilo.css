@@ -1,0 +1,37 @@
+body{
+    background: blue;
+    font: normal 17pt Arial;
+
+
+}
+
+header {
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+   
+}
+
+section {
+    background: rgb(158, 117, 117);
+    border-radius: 10px;
+    padding: 15px;
+    width: 600px;
+    margin:auto;
+    text-align: center;
+    box-shadow: 15px 15px 10px black;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+
+
+}
+
+h1{
+  
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+
+}

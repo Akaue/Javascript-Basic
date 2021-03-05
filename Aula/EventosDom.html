@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom </title>
+    <Style>
+        div#area {
+            background-color: green;
+            color: black;
+            width: 200px;
+            height: 200px;
+            text-align: center
+        }
+
+        div#normal {
+            background-color: rgb(128, 0, 79);
+            color: black;
+            width: 200px;
+            height: 200px;
+            text-align: center
+        }
+    </Style>
+
+</head>
+
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Minha div aqui acontecendo
+    </div>
+
+    <div id="normal">
+        minha segunda div
+    </div>
+
+    <script>
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = "Clicou!"
+        }
+        function entrar() {
+            var b = window.document.getElementById('area')
+            b.innerText = "entrouu"
+        }
+        function sair() {
+            var c = window.document.getElementById('area')
+            c.innerText = "saiuuu"
+        }
+
+
+
+
+
+        var f = window.document.getElementById('normal')
+        f.addEventListener('click', clicar2)
+        f.addEventListener('mouseenter', entrar2)
+        f.addEventListener('mouseout', sair2)
+
+        function clicar2() {
+            var f = window.document.getElementById('normal')
+            f.innerText = "clicou"
+            f.style.background = 'brown'
+        }
+
+        function entrar2() {
+            var g = window.document.getElementById('normal')
+            g.innerText = "entrouu"
+            g.style.background = 'blue'
+        }
+        function sair2() {
+            var h = window.document.getElementById('normal')
+            h.innerText = "saiuuu"
+            h.style.background = 'purple'
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
